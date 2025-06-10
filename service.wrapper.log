@@ -1,0 +1,131 @@
+2025-02-11 16:05:57,864 DEBUG - Starting ServiceWrapper in the CLI mode
+2025-02-11 16:05:58,730 INFO  - Installing the service with id 'user-api-service'
+2025-02-11 16:05:58,762 FATAL - WMI Operation failure: AccessDenied
+WMI.WmiException: AccessDenied
+   at WMI.WmiRoot.BaseHandler.CheckError(ManagementBaseObject result)
+   at WMI.WmiRoot.ClassHandler.Invoke(Object proxy, MethodInfo method, Object[] args)
+   at winsw.WrapperService.Run(String[] _args, ServiceDescriptor descriptor)
+   at winsw.WrapperService.Main(String[] args)
+2025-02-11 16:06:33,435 DEBUG - Starting ServiceWrapper in the CLI mode
+2025-02-11 16:06:34,176 INFO  - Installing the service with id 'user-api-service'
+2025-02-11 16:06:34,206 DEBUG - Completed. Exit code is 0
+2025-02-11 16:06:47,175 INFO  - Starting ServiceWrapper in the service mode
+2025-02-11 16:06:47,682 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-02-11 16:06:47,696 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-02-11 16:06:47,742 INFO  - Started process 30212
+2025-02-11 16:06:47,758 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-02-11 16:07:53,196 INFO  - Stopping user-api-service
+2025-02-11 16:07:53,208 DEBUG - ProcessKill 30212
+2025-02-11 16:07:53,797 INFO  - Found child process: 9640 Name: conhost.exe
+2025-02-11 16:07:54,207 INFO  - Stopping process 9640
+2025-02-11 16:07:54,257 INFO  - Send SIGINT 9640
+2025-02-11 16:07:54,272 WARN  - SIGINT to 9640 failed - Killing as fallback
+2025-02-11 16:07:54,292 INFO  - Stopping process 30212
+2025-02-11 16:07:54,339 INFO  - Send SIGINT 30212
+2025-02-11 16:07:54,350 WARN  - SIGINT to 30212 failed - Killing as fallback
+2025-02-11 16:07:54,368 INFO  - Finished user-api-service
+2025-02-11 16:07:54,382 DEBUG - Completed. Exit code is 0
+2025-02-26 05:57:36,837 INFO  - Starting ServiceWrapper in the service mode
+2025-02-26 05:57:36,909 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-02-26 05:57:36,919 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-02-26 05:57:36,974 INFO  - Started process 55556
+2025-02-26 05:57:36,995 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-03-10 09:02:30,656 INFO  - Stopping user-api-service
+2025-03-10 09:02:30,666 DEBUG - ProcessKill 55556
+2025-03-10 09:02:30,947 WARN  - Failed to locate children of the process with PID=55556. Child processes won't be terminated
+System.Runtime.InteropServices.COMException (0x8007045B): A system shutdown is in progress.
+
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.Util.ProcessHelper.GetChildPids(Int32 pid)
+2025-03-10 09:02:31,350 INFO  - Stopping process 55556
+2025-03-10 09:02:31,373 INFO  - Send SIGINT 55556
+2025-03-10 09:02:31,393 WARN  - SIGINT to 55556 failed - Killing as fallback
+2025-03-10 09:02:31,415 WARN  - Ignoring exception from killing process because it has exited
+System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Diagnostics.Process.Kill()
+   at winsw.Util.ProcessHelper.StopProcess(Int32 pid, TimeSpan stopTimeout)
+2025-03-10 09:02:31,440 INFO  - Finished user-api-service
+2025-03-10 09:02:31,474 DEBUG - Completed. Exit code is 0
+2025-03-19 18:52:18,255 INFO  - Starting ServiceWrapper in the service mode
+2025-03-19 18:52:18,335 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-19 18:52:18,372 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-19 18:52:18,543 INFO  - Started process 42988
+2025-03-19 18:52:18,591 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-03-19 18:53:45,685 INFO  - Stopping user-api-service
+2025-03-19 18:53:45,708 DEBUG - ProcessKill 42988
+2025-03-19 18:53:46,758 INFO  - Found child process: 58752 Name: conhost.exe
+2025-03-19 18:53:47,544 INFO  - Stopping process 58752
+2025-03-19 18:53:47,658 INFO  - Send SIGINT 58752
+2025-03-19 18:53:47,682 WARN  - SIGINT to 58752 failed - Killing as fallback
+2025-03-19 18:53:47,709 INFO  - Stopping process 42988
+2025-03-19 18:53:47,832 INFO  - Send SIGINT 42988
+2025-03-19 18:53:47,846 WARN  - SIGINT to 42988 failed - Killing as fallback
+2025-03-19 18:53:47,877 INFO  - Finished user-api-service
+2025-03-19 18:53:47,910 DEBUG - Completed. Exit code is 0
+2025-03-28 16:31:51,853 INFO  - Starting ServiceWrapper in the service mode
+2025-03-28 16:31:51,993 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-28 16:31:52,017 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-28 16:31:52,453 INFO  - Started process 40856
+2025-03-28 16:31:52,499 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-03-28 17:02:45,535 INFO  - Stopping user-api-service
+2025-03-28 17:02:45,588 DEBUG - ProcessKill 40856
+2025-03-28 17:02:47,371 INFO  - Found child process: 35764 Name: conhost.exe
+2025-03-28 17:02:48,279 INFO  - Stopping process 35764
+2025-03-28 17:02:48,373 INFO  - Send SIGINT 35764
+2025-03-28 17:02:48,415 WARN  - SIGINT to 35764 failed - Killing as fallback
+2025-03-28 17:02:48,449 INFO  - Stopping process 40856
+2025-03-28 17:02:48,682 INFO  - Send SIGINT 40856
+2025-03-28 17:02:48,738 WARN  - SIGINT to 40856 failed - Killing as fallback
+2025-03-28 17:02:48,796 INFO  - Finished user-api-service
+2025-03-28 17:02:48,834 DEBUG - Completed. Exit code is 0
+2025-03-28 20:03:07,472 INFO  - Starting ServiceWrapper in the service mode
+2025-03-28 20:03:07,567 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-28 20:03:07,585 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-28 20:03:07,657 INFO  - Started process 17728
+2025-03-28 20:03:07,696 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-03-28 20:03:59,952 INFO  - Starting ServiceWrapper in the service mode
+2025-03-28 20:04:00,056 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-28 20:04:00,080 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-03-28 20:04:00,143 INFO  - Started process 23812
+2025-03-28 20:04:00,198 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-04-14 05:03:49,606 INFO  - Stopping user-api-service
+2025-04-14 05:03:49,619 DEBUG - ProcessKill 23812
+2025-04-14 05:03:49,965 WARN  - Failed to locate children of the process with PID=23812. Child processes won't be terminated
+System.Runtime.InteropServices.COMException (0x80040154): Class not registered
+
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.Util.ProcessHelper.GetChildPids(Int32 pid)
+2025-04-14 05:03:50,630 INFO  - Stopping process 23812
+2025-04-14 05:03:50,652 INFO  - Send SIGINT 23812
+2025-04-14 05:03:50,931 INFO  - SIGINT to23812 successful
+2025-04-14 05:03:50,952 INFO  - Finished user-api-service
+2025-04-14 05:03:50,969 DEBUG - Completed. Exit code is 0
+2025-04-28 17:28:52,821 INFO  - Starting ServiceWrapper in the service mode
+2025-04-28 17:28:52,901 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-04-28 17:28:52,919 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-04-28 17:28:53,147 INFO  - Started process 21428
+2025-04-28 17:28:53,179 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-04-28 17:34:55,808 INFO  - Starting ServiceWrapper in the service mode
+2025-04-28 17:34:55,851 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-04-28 17:34:55,862 INFO  - Starting "C:\Program Files\Java\jdk-17\bin\java" -jar users-0.0.1-SNAPSHOT.jar --spring.profiles.active=production --add-opens java.base/java.time=ALL-UNNAMED
+2025-04-28 17:34:55,894 INFO  - Started process 46956
+2025-04-28 17:34:55,922 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.IgnoreLogAppender
+2025-04-29 09:18:16,478 INFO  - Stopping user-api-service
+2025-04-29 09:18:16,516 DEBUG - ProcessKill 46956
+2025-04-29 09:18:17,719 INFO  - Found child process: 45968 Name: conhost.exe
+2025-04-29 09:18:18,774 INFO  - Stopping process 45968
+2025-04-29 09:18:18,941 INFO  - Send SIGINT 45968
+2025-04-29 09:18:18,974 WARN  - SIGINT to 45968 failed - Killing as fallback
+2025-04-29 09:18:19,004 INFO  - Stopping process 46956
+2025-04-29 09:18:19,112 INFO  - Send SIGINT 46956
+2025-04-29 09:18:19,144 WARN  - SIGINT to 46956 failed - Killing as fallback
+2025-04-29 09:18:19,188 INFO  - Finished user-api-service
+2025-04-29 09:18:19,216 DEBUG - Completed. Exit code is 0

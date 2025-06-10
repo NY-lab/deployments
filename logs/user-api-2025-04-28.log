@@ -1,0 +1,241 @@
+{"timestamp":"2025-04-28 17:29:00","level":"INFO ","thread_name":"background-preinit","logger":"o.h.validator.internal.util.Version","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2025-04-28 17:29:00","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"Starting UsersApplication v0.0.1-SNAPSHOT using Java 17.0.6 with PID 21428 (C:\user-api\users-0.0.1-SNAPSHOT.jar started by ISW-230504-1263$ in C:\user-api)"}
+{"timestamp":"2025-04-28 17:29:00","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"The following 1 profile is active: "production""}
+{"timestamp":"2025-04-28 17:29:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Multiple Spring Data modules found, entering strict repository configuration mode"}
+{"timestamp":"2025-04-28 17:29:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JDBC repositories in DEFAULT mode."}
+{"timestamp":"2025-04-28 17:29:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport","message":"Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.interswitch.users.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table."}
+{"timestamp":"2025-04-28 17:29:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 120 ms. Found 0 JDBC repository interfaces."}
+{"timestamp":"2025-04-28 17:29:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Multiple Spring Data modules found, entering strict repository configuration mode"}
+{"timestamp":"2025-04-28 17:29:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2025-04-28 17:29:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface."}
+{"timestamp":"2025-04-28 17:29:08","level":"INFO ","thread_name":"main","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8081 (http)"}
+{"timestamp":"2025-04-28 17:29:08","level":"INFO ","thread_name":"main","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8081"]"}
+{"timestamp":"2025-04-28 17:29:08","level":"INFO ","thread_name":"main","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2025-04-28 17:29:08","level":"INFO ","thread_name":"main","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/10.1.24]"}
+{"timestamp":"2025-04-28 17:29:09","level":"INFO ","thread_name":"main","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2025-04-28 17:29:09","level":"INFO ","thread_name":"main","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","message":"Root WebApplicationContext: initialization completed in 8384 ms"}
+{"timestamp":"2025-04-28 17:29:12","level":"INFO ","thread_name":"main","logger":"o.h.jpa.internal.util.LogHelper","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2025-04-28 17:29:14","level":"INFO ","thread_name":"main","logger":"org.hibernate.Version","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2025-04-28 17:29:15","level":"INFO ","thread_name":"main","logger":"o.h.c.i.RegionFactoryInitiator","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2025-04-28 17:29:17","level":"INFO ","thread_name":"main","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2025-04-28 17:29:17","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2025-04-28 17:29:19","level":"WARN ","thread_name":"main","logger":"o.h.e.j.e.i.JdbcEnvironmentInitiator","message":"HHH000342: Could not obtain connection to query metadata"}
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.interswitch.users.UsersApplication.main(UsersApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+{"timestamp":"2025-04-28 17:29:19","level":"WARN ","thread_name":"main","logger":"org.hibernate.orm.deprecation","message":"HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2025-04-28 17:29:19","level":"WARN ","thread_name":"main","logger":"org.hibernate.orm.deprecation","message":"HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead"}
+{"timestamp":"2025-04-28 17:29:23","level":"INFO ","thread_name":"main","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2025-04-28 17:29:23","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2025-04-28 17:29:24","level":"WARN ","thread_name":"main","logger":"o.h.e.jdbc.spi.SqlExceptionHelper","message":"SQL Error: 0, SQLState: 08S01"}
+{"timestamp":"2025-04-28 17:29:24","level":"ERROR","thread_name":"main","logger":"o.h.e.jdbc.spi.SqlExceptionHelper","message":"Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server."}
+{"timestamp":"2025-04-28 17:29:24","level":"ERROR","thread_name":"main","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]"}
+{"timestamp":"2025-04-28 17:29:24","level":"WARN ","thread_name":"main","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]"}
+{"timestamp":"2025-04-28 17:29:24","level":"INFO ","thread_name":"main","logger":"o.a.catalina.core.StandardService","message":"Stopping service [Tomcat]"}
+{"timestamp":"2025-04-28 17:29:24","level":"INFO ","thread_name":"main","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2025-04-28 17:29:24","level":"ERROR","thread_name":"main","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.interswitch.users.UsersApplication.main(UsersApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 22 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 26 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 47 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:104)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:88)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805)
+	... 60 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62)
+	... 63 common frames omitted
+{"timestamp":"2025-04-28 17:34:59","level":"INFO ","thread_name":"background-preinit","logger":"o.h.validator.internal.util.Version","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2025-04-28 17:35:00","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"Starting UsersApplication v0.0.1-SNAPSHOT using Java 17.0.6 with PID 46956 (C:\user-api\users-0.0.1-SNAPSHOT.jar started by ISW-230504-1263$ in C:\user-api)"}
+{"timestamp":"2025-04-28 17:35:00","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"The following 1 profile is active: "production""}
+{"timestamp":"2025-04-28 17:35:04","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Multiple Spring Data modules found, entering strict repository configuration mode"}
+{"timestamp":"2025-04-28 17:35:04","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JDBC repositories in DEFAULT mode."}
+{"timestamp":"2025-04-28 17:35:04","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport","message":"Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.interswitch.users.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table."}
+{"timestamp":"2025-04-28 17:35:04","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 113 ms. Found 0 JDBC repository interfaces."}
+{"timestamp":"2025-04-28 17:35:04","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Multiple Spring Data modules found, entering strict repository configuration mode"}
+{"timestamp":"2025-04-28 17:35:04","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2025-04-28 17:35:05","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface."}
+{"timestamp":"2025-04-28 17:35:07","level":"INFO ","thread_name":"main","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8081 (http)"}
+{"timestamp":"2025-04-28 17:35:07","level":"INFO ","thread_name":"main","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8081"]"}
+{"timestamp":"2025-04-28 17:35:07","level":"INFO ","thread_name":"main","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2025-04-28 17:35:07","level":"INFO ","thread_name":"main","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/10.1.24]"}
+{"timestamp":"2025-04-28 17:35:07","level":"INFO ","thread_name":"main","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2025-04-28 17:35:07","level":"INFO ","thread_name":"main","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","message":"Root WebApplicationContext: initialization completed in 7269 ms"}
+{"timestamp":"2025-04-28 17:35:08","level":"INFO ","thread_name":"main","logger":"o.h.jpa.internal.util.LogHelper","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2025-04-28 17:35:08","level":"INFO ","thread_name":"main","logger":"org.hibernate.Version","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2025-04-28 17:35:08","level":"INFO ","thread_name":"main","logger":"o.h.c.i.RegionFactoryInitiator","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2025-04-28 17:35:10","level":"INFO ","thread_name":"main","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2025-04-28 17:35:10","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2025-04-28 17:35:12","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c3ab672"}
+{"timestamp":"2025-04-28 17:35:12","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2025-04-28 17:35:12","level":"WARN ","thread_name":"main","logger":"org.hibernate.orm.deprecation","message":"HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2025-04-28 17:35:12","level":"WARN ","thread_name":"main","logger":"org.hibernate.orm.deprecation","message":"HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead"}
+{"timestamp":"2025-04-28 17:35:16","level":"INFO ","thread_name":"main","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2025-04-28 17:35:16","level":"INFO ","thread_name":"main","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.findByEmail"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.findByEmail"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.existsByEmail"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.existsByEmail"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.existsByUsername"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.existsByUsername"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.findByUsername"}
+{"timestamp":"2025-04-28 17:35:17","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.findByUsername"}
+{"timestamp":"2025-04-28 17:35:20","level":"INFO ","thread_name":"main","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8081"]"}
+{"timestamp":"2025-04-28 17:35:21","level":"INFO ","thread_name":"main","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat started on port 8081 (http) with context path '/'"}
+{"timestamp":"2025-04-28 17:35:21","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"Started UsersApplication in 23.243 seconds (process running for 25.179)"}
+{"timestamp":"2025-04-28 17:35:21","level":"INFO ","thread_name":"http-nio-8081-exec-2","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2025-04-28 17:35:21","level":"INFO ","thread_name":"AsynchThread-1","logger":"c.i.users.service.UserService","message":"[ASYNC] Fetching all users - Page: 0, Size: 10"}
+{"timestamp":"2025-04-28 17:35:22","level":"INFO ","thread_name":"AsynchThread-1","logger":"c.i.users.service.UserService","message":"[ASYNC] Found 10 users"}
+{"timestamp":"2025-04-28 17:38:11","level":"INFO ","thread_name":"http-nio-8081-exec-2","logger":"o.s.api.AbstractOpenApiResource","message":"Init duration for springdoc-openapi is: 917 ms"}
+{"timestamp":"2025-04-28 18:11:30","level":"WARN ","thread_name":"HikariPool-1 housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m54s316ms967µs300ns)."}
+{"timestamp":"2025-04-28 20:34:38","level":"WARN ","thread_name":"HikariPool-1 housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m44s395ms181µs100ns)."}

@@ -1,0 +1,4 @@
+{"timestamp":"2025-04-14 03:38:46","level":"WARN ","thread_name":"HikariPool-1 housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h28m55s182ms489µs300ns)."}
+{"timestamp":"2025-04-14 05:03:49","level":"INFO ","thread_name":"SpringApplicationShutdownHook","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2025-04-14 05:03:49","level":"INFO ","thread_name":"SpringApplicationShutdownHook","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Shutdown initiated..."}
+{"timestamp":"2025-04-14 05:03:49","level":"INFO ","thread_name":"SpringApplicationShutdownHook","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Shutdown completed."}

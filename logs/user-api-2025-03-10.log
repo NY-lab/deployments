@@ -1,0 +1,2 @@
+{"timestamp":"2025-03-10 07:43:53","level":"WARN ","thread_name":"HikariPool-1 housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h16m15s150ms768µs900ns)."}
+{"timestamp":"2025-03-10 07:53:12","level":"WARN ","thread_name":"HikariPool-1 housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m18s367ms156µs700ns)."}

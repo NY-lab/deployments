@@ -1,0 +1,38 @@
+{"timestamp":"2025-03-19 18:52:24","level":"INFO ","thread_name":"background-preinit","logger":"o.h.validator.internal.util.Version","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2025-03-19 18:52:25","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"Starting UsersApplication v0.0.1-SNAPSHOT using Java 17.0.6 with PID 42988 (C:\user-api\users-0.0.1-SNAPSHOT.jar started by ISW-230504-1263$ in C:\user-api)"}
+{"timestamp":"2025-03-19 18:52:25","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"The following 1 profile is active: "production""}
+{"timestamp":"2025-03-19 18:52:29","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Multiple Spring Data modules found, entering strict repository configuration mode"}
+{"timestamp":"2025-03-19 18:52:29","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JDBC repositories in DEFAULT mode."}
+{"timestamp":"2025-03-19 18:52:30","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport","message":"Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.interswitch.users.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table."}
+{"timestamp":"2025-03-19 18:52:30","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 100 ms. Found 0 JDBC repository interfaces."}
+{"timestamp":"2025-03-19 18:52:30","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Multiple Spring Data modules found, entering strict repository configuration mode"}
+{"timestamp":"2025-03-19 18:52:30","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2025-03-19 18:52:30","level":"INFO ","thread_name":"main","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface."}
+{"timestamp":"2025-03-19 18:52:32","level":"INFO ","thread_name":"main","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8081 (http)"}
+{"timestamp":"2025-03-19 18:52:32","level":"INFO ","thread_name":"main","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8081"]"}
+{"timestamp":"2025-03-19 18:52:32","level":"INFO ","thread_name":"main","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2025-03-19 18:52:32","level":"INFO ","thread_name":"main","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/10.1.24]"}
+{"timestamp":"2025-03-19 18:52:32","level":"INFO ","thread_name":"main","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2025-03-19 18:52:32","level":"INFO ","thread_name":"main","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","message":"Root WebApplicationContext: initialization completed in 7409 ms"}
+{"timestamp":"2025-03-19 18:52:33","level":"INFO ","thread_name":"main","logger":"o.h.jpa.internal.util.LogHelper","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2025-03-19 18:52:34","level":"INFO ","thread_name":"main","logger":"org.hibernate.Version","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2025-03-19 18:52:34","level":"INFO ","thread_name":"main","logger":"o.h.c.i.RegionFactoryInitiator","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2025-03-19 18:52:35","level":"INFO ","thread_name":"main","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2025-03-19 18:52:35","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2025-03-19 18:52:37","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32328dc4"}
+{"timestamp":"2025-03-19 18:52:37","level":"INFO ","thread_name":"main","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2025-03-19 18:52:37","level":"WARN ","thread_name":"main","logger":"org.hibernate.orm.deprecation","message":"HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2025-03-19 18:52:37","level":"WARN ","thread_name":"main","logger":"org.hibernate.orm.deprecation","message":"HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead"}
+{"timestamp":"2025-03-19 18:52:41","level":"INFO ","thread_name":"main","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2025-03-19 18:52:41","level":"INFO ","thread_name":"main","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.findByUsername"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.findByUsername"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.existsByUsername"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.existsByUsername"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.existsByEmail"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.existsByEmail"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Looking up named query User.findByEmail"}
+{"timestamp":"2025-03-19 18:52:42","level":"DEBUG","thread_name":"main","logger":"o.s.d.j.repository.query.NamedQuery","message":"Did not find named query User.findByEmail"}
+{"timestamp":"2025-03-19 18:52:45","level":"INFO ","thread_name":"main","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8081"]"}
+{"timestamp":"2025-03-19 18:52:45","level":"INFO ","thread_name":"main","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat started on port 8081 (http) with context path '/'"}
+{"timestamp":"2025-03-19 18:52:45","level":"INFO ","thread_name":"main","logger":"c.interswitch.users.UsersApplication","message":"Started UsersApplication in 22.569 seconds (process running for 25.701)"}
